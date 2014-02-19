@@ -1,0 +1,1963 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>My Project: クラス MixiRequest</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 作成： Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>構成</span></a></li>
+      <li><a href="classes.html"><span>構成索引</span></a></li>
+      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>構成メンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>マクロ定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>ページ</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Instance Methods</a> &#124;
+<a href="#pub-static-methods">Class Methods</a> &#124;
+<a href="#properties">プロパティ</a> &#124;
+<a href="class_mixi_request-members.html">すべてのメンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">クラス MixiRequest</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>mixi APIのリクエストに必要な情報を保持するクラス  
+ <a href="interface_mixi_request.html#details">[詳細]</a></p>
+
+<p><code>#import &lt;<a class="el" href="_mixi_request_8h_source.html">MixiRequest.h</a>&gt;</code></p>
+<div class="dynheader">
+MixiRequestに対する継承グラフ</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_mixi_request.png" usemap="#MixiRequest_map" alt=""/>
+  <map id="MixiRequest_map" name="MixiRequest_map">
+<area href="interface_mixi_u_r_l_request_constructor.html" title="API呼び出しに必要な情報を保持するクラスの親クラス " alt="MixiURLRequestConstructor" shape="rect" coords="0,56,168,80"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Instance Methods</h2></td></tr>
+<tr class="memitem:ae664e43164cc446350317d5d417e78aa"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_mixi_request.html#ae664e43164cc446350317d5d417e78aa">initWithMethod:endpoint:</a></td></tr>
+<tr class="memdesc:ae664e43164cc446350317d5d417e78aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTPメソッドとエンドポイントを指定してリクエストを初期化  <a href="#ae664e43164cc446350317d5d417e78aa">[詳細]</a><br/></td></tr>
+<tr class="separator:ae664e43164cc446350317d5d417e78aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37d95f00b6f0eedc7dae95bb6c043e10"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_mixi_request.html#a37d95f00b6f0eedc7dae95bb6c043e10">initWithMethod:endpoint:body:</a></td></tr>
+<tr class="memdesc:a37d95f00b6f0eedc7dae95bb6c043e10"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTPメソッドとエンドポイントとリクエストボディを指定してリクエストを初期化  <a href="#a37d95f00b6f0eedc7dae95bb6c043e10">[詳細]</a><br/></td></tr>
+<tr class="separator:a37d95f00b6f0eedc7dae95bb6c043e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86e608305b620b3ea5e6e8d3590eb141"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_mixi_request.html#a86e608305b620b3ea5e6e8d3590eb141">initWithEndpoint:params:</a></td></tr>
+<tr class="memdesc:a86e608305b620b3ea5e6e8d3590eb141"><td class="mdescLeft">&#160;</td><td class="mdescRight">エンドポイントとパラメーターを指定してリクエストを初期化  <a href="#a86e608305b620b3ea5e6e8d3590eb141">[詳細]</a><br/></td></tr>
+<tr class="separator:a86e608305b620b3ea5e6e8d3590eb141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb45ba5f12776ee5223287273508f787"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_mixi_request.html#adb45ba5f12776ee5223287273508f787">initWithEndpoint:body:params:</a></td></tr>
+<tr class="memdesc:adb45ba5f12776ee5223287273508f787"><td class="mdescLeft">&#160;</td><td class="mdescRight">エンドポイントとリクエストボディとパラメーターを指定してリクエストを初期化  <a href="#adb45ba5f12776ee5223287273508f787">[詳細]</a><br/></td></tr>
+<tr class="separator:adb45ba5f12776ee5223287273508f787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1d99b714c6a64ee7c242d23d02956e1"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_mixi_request.html#af1d99b714c6a64ee7c242d23d02956e1">initWithMethod:endpoint:params:</a></td></tr>
+<tr class="memdesc:af1d99b714c6a64ee7c242d23d02956e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTPメソッドとエンドポイントとパラメーターを指定してリクエストを初期化  <a href="#af1d99b714c6a64ee7c242d23d02956e1">[詳細]</a><br/></td></tr>
+<tr class="separator:af1d99b714c6a64ee7c242d23d02956e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf34d40b430684dfbce71152eff5a21b"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_mixi_request.html#adf34d40b430684dfbce71152eff5a21b">initWithMethod:endpoint:body:params:</a></td></tr>
+<tr class="memdesc:adf34d40b430684dfbce71152eff5a21b"><td class="mdescLeft">&#160;</td><td class="mdescRight">[指定イニシャライザ] HTTPメソッドとエンドポイントとリクエストボディとパラメーターを指定してリクエストを初期化  <a href="#adf34d40b430684dfbce71152eff5a21b">[詳細]</a><br/></td></tr>
+<tr class="separator:adf34d40b430684dfbce71152eff5a21b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21d7cabcfd3ae1062181942d96cfe589"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_mixi_request.html#a21d7cabcfd3ae1062181942d96cfe589">setParamsAndKeys:</a></td></tr>
+<tr class="memdesc:a21d7cabcfd3ae1062181942d96cfe589"><td class="mdescLeft">&#160;</td><td class="mdescRight">パラメーターを設定  <a href="#a21d7cabcfd3ae1062181942d96cfe589">[詳細]</a><br/></td></tr>
+<tr class="separator:a21d7cabcfd3ae1062181942d96cfe589"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a627bc0e5540626186cfe8e7e0529d90a"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_mixi_request.html#a627bc0e5540626186cfe8e7e0529d90a">setParam:forKey:</a></td></tr>
+<tr class="memdesc:a627bc0e5540626186cfe8e7e0529d90a"><td class="mdescLeft">&#160;</td><td class="mdescRight">パラメーターを設定  <a href="#a627bc0e5540626186cfe8e7e0529d90a">[詳細]</a><br/></td></tr>
+<tr class="separator:a627bc0e5540626186cfe8e7e0529d90a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a591381cdfdbd187e2f6b9859c2993bf5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a591381cdfdbd187e2f6b9859c2993bf5"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_mixi_request.html#a591381cdfdbd187e2f6b9859c2993bf5">clearParams</a></td></tr>
+<tr class="memdesc:a591381cdfdbd187e2f6b9859c2993bf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">パラメーターをクリア <br/></td></tr>
+<tr class="separator:a591381cdfdbd187e2f6b9859c2993bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26f026fb256c76b3daa585d0372a86b0"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_mixi_request.html#a26f026fb256c76b3daa585d0372a86b0">addAttachment:forKey:</a></td></tr>
+<tr class="memdesc:a26f026fb256c76b3daa585d0372a86b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">添付ファイルを追加  <a href="#a26f026fb256c76b3daa585d0372a86b0">[詳細]</a><br/></td></tr>
+<tr class="separator:a26f026fb256c76b3daa585d0372a86b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interface_mixi_u_r_l_request_constructor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_mixi_u_r_l_request_constructor')"><img src="closed.png" alt="-"/>&#160;Instance Methods inherited from <a class="el" href="interface_mixi_u_r_l_request_constructor.html">MixiURLRequestConstructor</a></td></tr>
+<tr class="memitem:a3a3605daf2e37a9efb33dbb16ff39800 inherit pub_methods_interface_mixi_u_r_l_request_constructor"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_mixi_u_r_l_request_constructor.html#a3a3605daf2e37a9efb33dbb16ff39800">initWithEndpoint:</a></td></tr>
+<tr class="memdesc:a3a3605daf2e37a9efb33dbb16ff39800 inherit pub_methods_interface_mixi_u_r_l_request_constructor"><td class="mdescLeft">&#160;</td><td class="mdescRight">エンドポイントを指定してリクエストを初期化  <a href="#a3a3605daf2e37a9efb33dbb16ff39800">[詳細]</a><br/></td></tr>
+<tr class="separator:a3a3605daf2e37a9efb33dbb16ff39800 inherit pub_methods_interface_mixi_u_r_l_request_constructor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af441504fe621842fa48748cf49f2d096 inherit pub_methods_interface_mixi_u_r_l_request_constructor"><td class="memItemLeft" align="right" valign="top">(NSURLRequest *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_mixi_u_r_l_request_constructor.html#af441504fe621842fa48748cf49f2d096">constructURLRequest:</a></td></tr>
+<tr class="memdesc:af441504fe621842fa48748cf49f2d096 inherit pub_methods_interface_mixi_u_r_l_request_constructor"><td class="mdescLeft">&#160;</td><td class="mdescRight">自身の情報からNSURLConnectionで実際に送信するためのURLリクエストを作成  <a href="#af441504fe621842fa48748cf49f2d096">[詳細]</a><br/></td></tr>
+<tr class="separator:af441504fe621842fa48748cf49f2d096 inherit pub_methods_interface_mixi_u_r_l_request_constructor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Class Methods</h2></td></tr>
+<tr class="memitem:aa62c59fb9140c81fe4dc0c2939a228d8"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_request.html#aa62c59fb9140c81fe4dc0c2939a228d8">requestWithEndpoint:</a></td></tr>
+<tr class="memdesc:aa62c59fb9140c81fe4dc0c2939a228d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">エンドポイントを指定してGETリクエストを生成  <a href="#aa62c59fb9140c81fe4dc0c2939a228d8">[詳細]</a><br/></td></tr>
+<tr class="separator:aa62c59fb9140c81fe4dc0c2939a228d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15fb511dcd392162922a8ba50f25a7c2"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_request.html#a15fb511dcd392162922a8ba50f25a7c2">requestWithMethod:endpoint:</a></td></tr>
+<tr class="memdesc:a15fb511dcd392162922a8ba50f25a7c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTPメソッドとエンドポイントを指定してリクエストを生成  <a href="#a15fb511dcd392162922a8ba50f25a7c2">[詳細]</a><br/></td></tr>
+<tr class="separator:a15fb511dcd392162922a8ba50f25a7c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e1698552b72d5588dbae267ed102ef6"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_request.html#a3e1698552b72d5588dbae267ed102ef6">requestWithMethod:endpoint:body:</a></td></tr>
+<tr class="memdesc:a3e1698552b72d5588dbae267ed102ef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTPメソッドとエンドポイントとリクエストボディを指定してリクエストを生成  <a href="#a3e1698552b72d5588dbae267ed102ef6">[詳細]</a><br/></td></tr>
+<tr class="separator:a3e1698552b72d5588dbae267ed102ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1937aa6495f2f8fac4763fa8bfb1d47"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_request.html#ae1937aa6495f2f8fac4763fa8bfb1d47">requestWithEndpoint:params:</a></td></tr>
+<tr class="memdesc:ae1937aa6495f2f8fac4763fa8bfb1d47"><td class="mdescLeft">&#160;</td><td class="mdescRight">エンドポイントとパラメーターを指定してGETリクエストを生成  <a href="#ae1937aa6495f2f8fac4763fa8bfb1d47">[詳細]</a><br/></td></tr>
+<tr class="separator:ae1937aa6495f2f8fac4763fa8bfb1d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e5b0a8ec2c7d46f2ed4bc260414016b"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_request.html#a0e5b0a8ec2c7d46f2ed4bc260414016b">getRequestWithEndpoint:params:</a></td></tr>
+<tr class="memdesc:a0e5b0a8ec2c7d46f2ed4bc260414016b"><td class="mdescLeft">&#160;</td><td class="mdescRight">エンドポイントとパラメーターを指定してGETリクエストを生成  <a href="#a0e5b0a8ec2c7d46f2ed4bc260414016b">[詳細]</a><br/></td></tr>
+<tr class="separator:a0e5b0a8ec2c7d46f2ed4bc260414016b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9c72d896a97f4318d055d08fa64ff69"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_request.html#aa9c72d896a97f4318d055d08fa64ff69">postRequestWithEndpoint:</a></td></tr>
+<tr class="memdesc:aa9c72d896a97f4318d055d08fa64ff69"><td class="mdescLeft">&#160;</td><td class="mdescRight">エンドポイントを指定してPOSTリクエストを生成  <a href="#aa9c72d896a97f4318d055d08fa64ff69">[詳細]</a><br/></td></tr>
+<tr class="separator:aa9c72d896a97f4318d055d08fa64ff69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a989f15fa7d063356742140b345019f3a"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_request.html#a989f15fa7d063356742140b345019f3a">postRequestWithEndpoint:params:</a></td></tr>
+<tr class="memdesc:a989f15fa7d063356742140b345019f3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">エンドポイントとパラメーターを指定してPOSTリクエストを生成  <a href="#a989f15fa7d063356742140b345019f3a">[詳細]</a><br/></td></tr>
+<tr class="separator:a989f15fa7d063356742140b345019f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c375e91c1ab9dec4948122f219af621"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_request.html#a7c375e91c1ab9dec4948122f219af621">postRequestWithEndpoint:body:</a></td></tr>
+<tr class="memdesc:a7c375e91c1ab9dec4948122f219af621"><td class="mdescLeft">&#160;</td><td class="mdescRight">エンドポイントとリクエストボディを指定してPOSTリクエストを生成  <a href="#a7c375e91c1ab9dec4948122f219af621">[詳細]</a><br/></td></tr>
+<tr class="separator:a7c375e91c1ab9dec4948122f219af621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e4fa5dda0a5162f52c47d01cc5edcb5"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_request.html#a4e4fa5dda0a5162f52c47d01cc5edcb5">postRequestWithEndpoint:body:params:</a></td></tr>
+<tr class="memdesc:a4e4fa5dda0a5162f52c47d01cc5edcb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">エンドポイントとリクエストボディとパラメーターを指定してPOSTリクエストを生成  <a href="#a4e4fa5dda0a5162f52c47d01cc5edcb5">[詳細]</a><br/></td></tr>
+<tr class="separator:a4e4fa5dda0a5162f52c47d01cc5edcb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a64cf5b23e9d6d8495aefe926e4d67b"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_request.html#a4a64cf5b23e9d6d8495aefe926e4d67b">putRequestWithEndpoint:params:</a></td></tr>
+<tr class="memdesc:a4a64cf5b23e9d6d8495aefe926e4d67b"><td class="mdescLeft">&#160;</td><td class="mdescRight">エンドポイントとパラメーターを指定してPUTリクエストを生成  <a href="#a4a64cf5b23e9d6d8495aefe926e4d67b">[詳細]</a><br/></td></tr>
+<tr class="separator:a4a64cf5b23e9d6d8495aefe926e4d67b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16d88eff3ecd8d07faa617ca57bb9dfd"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_request.html#a16d88eff3ecd8d07faa617ca57bb9dfd">putRequestWithEndpoint:body:</a></td></tr>
+<tr class="memdesc:a16d88eff3ecd8d07faa617ca57bb9dfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">エンドポイントとリクエストボディを指定してPUTリクエストを生成  <a href="#a16d88eff3ecd8d07faa617ca57bb9dfd">[詳細]</a><br/></td></tr>
+<tr class="separator:a16d88eff3ecd8d07faa617ca57bb9dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb5be7a6433db24ea26b11c6e3b0dc0e"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_request.html#abb5be7a6433db24ea26b11c6e3b0dc0e">putRequestWithEndpoint:body:params:</a></td></tr>
+<tr class="memdesc:abb5be7a6433db24ea26b11c6e3b0dc0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">エンドポイントとリクエストボディとパラメーターを指定してPUTリクエストを生成  <a href="#abb5be7a6433db24ea26b11c6e3b0dc0e">[詳細]</a><br/></td></tr>
+<tr class="separator:abb5be7a6433db24ea26b11c6e3b0dc0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ba53f5bf43b4b5bb7a9104efc165de2"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_request.html#a8ba53f5bf43b4b5bb7a9104efc165de2">deleteRequestWithEndpoint:</a></td></tr>
+<tr class="memdesc:a8ba53f5bf43b4b5bb7a9104efc165de2"><td class="mdescLeft">&#160;</td><td class="mdescRight">エンドポイントを指定してDELETEリクエストを生成  <a href="#a8ba53f5bf43b4b5bb7a9104efc165de2">[詳細]</a><br/></td></tr>
+<tr class="separator:a8ba53f5bf43b4b5bb7a9104efc165de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90b916890c59a0bbd245e25912317745"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_request.html#a90b916890c59a0bbd245e25912317745">deleteRequestWithEndpoint:params:</a></td></tr>
+<tr class="memdesc:a90b916890c59a0bbd245e25912317745"><td class="mdescLeft">&#160;</td><td class="mdescRight">エンドポイントとパラメーターを指定してDELETEリクエストを生成  <a href="#a90b916890c59a0bbd245e25912317745">[詳細]</a><br/></td></tr>
+<tr class="separator:a90b916890c59a0bbd245e25912317745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbc61a7a184a0b4cb9f52a95bde401d1"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_request.html#abbc61a7a184a0b4cb9f52a95bde401d1">deleteRequestWithEndpoint:body:params:</a></td></tr>
+<tr class="memdesc:abbc61a7a184a0b4cb9f52a95bde401d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">エンドポイントとリクエストボディとパラメーターを指定してDELETEリクエストを生成  <a href="#abbc61a7a184a0b4cb9f52a95bde401d1">[詳細]</a><br/></td></tr>
+<tr class="separator:abbc61a7a184a0b4cb9f52a95bde401d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3deb7ecfbbac2dd0613dae19a6529f8d"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_request.html#a3deb7ecfbbac2dd0613dae19a6529f8d">requestWithEndpoint:paramsAndKeys:</a></td></tr>
+<tr class="memdesc:a3deb7ecfbbac2dd0613dae19a6529f8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">エンドポイントとパラメーターを指定してGETリクエストを生成  <a href="#a3deb7ecfbbac2dd0613dae19a6529f8d">[詳細]</a><br/></td></tr>
+<tr class="separator:a3deb7ecfbbac2dd0613dae19a6529f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0cb07a81eb0e62d5ff718078b4ee026"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_request.html#ac0cb07a81eb0e62d5ff718078b4ee026">getRequestWithEndpoint:paramsAndKeys:</a></td></tr>
+<tr class="memdesc:ac0cb07a81eb0e62d5ff718078b4ee026"><td class="mdescLeft">&#160;</td><td class="mdescRight">エンドポイントとパラメーターを指定してGETリクエストを生成  <a href="#ac0cb07a81eb0e62d5ff718078b4ee026">[詳細]</a><br/></td></tr>
+<tr class="separator:ac0cb07a81eb0e62d5ff718078b4ee026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c9a13b94cf4e208f0ee45cc9089baa1"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_request.html#a5c9a13b94cf4e208f0ee45cc9089baa1">postRequestWithEndpoint:paramsAndKeys:</a></td></tr>
+<tr class="memdesc:a5c9a13b94cf4e208f0ee45cc9089baa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">エンドポイントとパラメーターを指定してPOSTリクエストを生成  <a href="#a5c9a13b94cf4e208f0ee45cc9089baa1">[詳細]</a><br/></td></tr>
+<tr class="separator:a5c9a13b94cf4e208f0ee45cc9089baa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45779b7dea070da2ea3417e83e2da6e1"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_request.html#a45779b7dea070da2ea3417e83e2da6e1">postRequestWithEndpoint:body:paramsAndKeys:</a></td></tr>
+<tr class="memdesc:a45779b7dea070da2ea3417e83e2da6e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">エンドポイントとリクエストボディとパラメーターを指定してPOSTリクエストを生成  <a href="#a45779b7dea070da2ea3417e83e2da6e1">[詳細]</a><br/></td></tr>
+<tr class="separator:a45779b7dea070da2ea3417e83e2da6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a358f00bf10e0773082bf3a91901d57d6"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_request.html#a358f00bf10e0773082bf3a91901d57d6">putRequestWithEndpoint:paramsAndKeys:</a></td></tr>
+<tr class="memdesc:a358f00bf10e0773082bf3a91901d57d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">エンドポイントとパラメーターを指定してPUTリクエストを生成  <a href="#a358f00bf10e0773082bf3a91901d57d6">[詳細]</a><br/></td></tr>
+<tr class="separator:a358f00bf10e0773082bf3a91901d57d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96b6931517617173dfb752dc98f027f3"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_request.html#a96b6931517617173dfb752dc98f027f3">putRequestWithEndpoint:body:paramsAndKeys:</a></td></tr>
+<tr class="memdesc:a96b6931517617173dfb752dc98f027f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">エンドポイントとリクエストボディとパラメーターを指定してPUTリクエストを生成  <a href="#a96b6931517617173dfb752dc98f027f3">[詳細]</a><br/></td></tr>
+<tr class="separator:a96b6931517617173dfb752dc98f027f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30026383ebceb75b0dff392902034abd"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_request.html#a30026383ebceb75b0dff392902034abd">deleteRequestWithEndpoint:paramsAndKeys:</a></td></tr>
+<tr class="memdesc:a30026383ebceb75b0dff392902034abd"><td class="mdescLeft">&#160;</td><td class="mdescRight">エンドポイントとパラメーターを指定してDELETEリクエストを生成  <a href="#a30026383ebceb75b0dff392902034abd">[詳細]</a><br/></td></tr>
+<tr class="separator:a30026383ebceb75b0dff392902034abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fd21982c389b5f1092caed563ac61a1"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_request.html#a2fd21982c389b5f1092caed563ac61a1">deleteRequestWithEndpoint:body:paramsAndKeys:</a></td></tr>
+<tr class="memdesc:a2fd21982c389b5f1092caed563ac61a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">エンドポイントとリクエストボディとパラメーターを指定してDELETEリクエストを生成  <a href="#a2fd21982c389b5f1092caed563ac61a1">[詳細]</a><br/></td></tr>
+<tr class="separator:a2fd21982c389b5f1092caed563ac61a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a693477cbe7457b4905bcbfcfdf0aaf0a"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_request.html#a693477cbe7457b4905bcbfcfdf0aaf0a">requestWithMethod:endpoint:params:</a></td></tr>
+<tr class="memdesc:a693477cbe7457b4905bcbfcfdf0aaf0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTPメソッドとエンドポイントとパラメーターを指定してリクエストを生成  <a href="#a693477cbe7457b4905bcbfcfdf0aaf0a">[詳細]</a><br/></td></tr>
+<tr class="separator:a693477cbe7457b4905bcbfcfdf0aaf0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7b10d14605307411bee76c2acc222ec"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_request.html#af7b10d14605307411bee76c2acc222ec">requestWithMethod:endpoint:body:params:</a></td></tr>
+<tr class="memdesc:af7b10d14605307411bee76c2acc222ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTPメソッドとエンドポイントとリクエストボディとパラメーターを指定してリクエストを生成  <a href="#af7b10d14605307411bee76c2acc222ec">[詳細]</a><br/></td></tr>
+<tr class="separator:af7b10d14605307411bee76c2acc222ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a972ef46d591b92b07612906d0b7a30b2"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_request.html#a972ef46d591b92b07612906d0b7a30b2">setDefaultRequestTimeout:</a></td></tr>
+<tr class="memdesc:a972ef46d591b92b07612906d0b7a30b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">デフォルトタイムアウトを設定  <a href="#a972ef46d591b92b07612906d0b7a30b2">[詳細]</a><br/></td></tr>
+<tr class="separator:a972ef46d591b92b07612906d0b7a30b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad81461c4e8c21be9183651942bc6753a"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_request.html#ad81461c4e8c21be9183651942bc6753a">setDefaultRequestCachePolicy:</a></td></tr>
+<tr class="memdesc:ad81461c4e8c21be9183651942bc6753a"><td class="mdescLeft">&#160;</td><td class="mdescRight">デフォルトキャッシュポリシーを設定  <a href="#ad81461c4e8c21be9183651942bc6753a">[詳細]</a><br/></td></tr>
+<tr class="separator:ad81461c4e8c21be9183651942bc6753a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11e4cb3375607ee548336e1522af92e1"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_request.html#a11e4cb3375607ee548336e1522af92e1">setDefaultImageTypeJPEG</a></td></tr>
+<tr class="memdesc:a11e4cb3375607ee548336e1522af92e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">デフォルトの画像タイプをJPEGに設定  <a href="#a11e4cb3375607ee548336e1522af92e1">[詳細]</a><br/></td></tr>
+<tr class="separator:a11e4cb3375607ee548336e1522af92e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9fc7aef452cbdede3ba7763f6e652f2"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_request.html#af9fc7aef452cbdede3ba7763f6e652f2">setDefaultImageTypePNG</a></td></tr>
+<tr class="memdesc:af9fc7aef452cbdede3ba7763f6e652f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">デフォルトの画像タイプをPNGに設定  <a href="#af9fc7aef452cbdede3ba7763f6e652f2">[詳細]</a><br/></td></tr>
+<tr class="separator:af9fc7aef452cbdede3ba7763f6e652f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada279ffb3aaf7eddad2989914778eeba"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_request.html#ada279ffb3aaf7eddad2989914778eeba">setDefaultCompressionQuality:</a></td></tr>
+<tr class="memdesc:ada279ffb3aaf7eddad2989914778eeba"><td class="mdescLeft">&#160;</td><td class="mdescRight">JPEGを使用した際のデフォルトの圧縮率を設定  <a href="#ada279ffb3aaf7eddad2989914778eeba">[詳細]</a><br/></td></tr>
+<tr class="separator:ada279ffb3aaf7eddad2989914778eeba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a033294183dad022e9ac973f473656d30"><td class="memItemLeft" align="right" valign="top">(NSString *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_mixi_request.html#a033294183dad022e9ac973f473656d30">userAgent</a></td></tr>
+<tr class="memdesc:a033294183dad022e9ac973f473656d30"><td class="mdescLeft">&#160;</td><td class="mdescRight">ユーザーエージェントを取得  <a href="#a033294183dad022e9ac973f473656d30">[詳細]</a><br/></td></tr>
+<tr class="separator:a033294183dad022e9ac973f473656d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+プロパティ</h2></td></tr>
+<tr class="memitem:af322d4fa5986a4f116e8f8078ef9739b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af322d4fa5986a4f116e8f8078ef9739b"></a>
+NSObject *&#160;</td><td class="memItemRight" valign="bottom"><b>body</b></td></tr>
+<tr class="separator:af322d4fa5986a4f116e8f8078ef9739b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbb685d3652dcb2309a823f10bd8c233"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acbb685d3652dcb2309a823f10bd8c233"></a>
+NSData *&#160;</td><td class="memItemRight" valign="bottom"><b>bodyData</b></td></tr>
+<tr class="separator:acbb685d3652dcb2309a823f10bd8c233"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5df20b28ea1fb63c3cac0ffd1cecdc6b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5df20b28ea1fb63c3cac0ffd1cecdc6b"></a>
+NSMutableDictionary *&#160;</td><td class="memItemRight" valign="bottom"><b>params</b></td></tr>
+<tr class="separator:a5df20b28ea1fb63c3cac0ffd1cecdc6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec09694c1c1afcab9d7557d278fc1afc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec09694c1c1afcab9d7557d278fc1afc"></a>
+NSMutableDictionary *&#160;</td><td class="memItemRight" valign="bottom"><b>attachments</b></td></tr>
+<tr class="separator:aec09694c1c1afcab9d7557d278fc1afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a912c9e586070283194678f55d2228fc3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a912c9e586070283194678f55d2228fc3"></a>
+NSString *&#160;</td><td class="memItemRight" valign="bottom"><b>httpMethod</b></td></tr>
+<tr class="separator:a912c9e586070283194678f55d2228fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c90dc70fbb59482bda95ea16c21cf20"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c90dc70fbb59482bda95ea16c21cf20"></a>
+NSString *&#160;</td><td class="memItemRight" valign="bottom"><b>contentType</b></td></tr>
+<tr class="separator:a6c90dc70fbb59482bda95ea16c21cf20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc136fcfbae51e938c89f34d17d6a09c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc136fcfbae51e938c89f34d17d6a09c"></a>
+NSTimeInterval&#160;</td><td class="memItemRight" valign="bottom"><b>requestTimeout</b></td></tr>
+<tr class="separator:acc136fcfbae51e938c89f34d17d6a09c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1edf9397757764bcf5bcf4426eb35b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1edf9397757764bcf5bcf4426eb35b0"></a>
+NSURLRequestCachePolicy&#160;</td><td class="memItemRight" valign="bottom"><b>cachePolicy</b></td></tr>
+<tr class="separator:ac1edf9397757764bcf5bcf4426eb35b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2bfb8d63bc506f3a3d36e91733dc52f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af2bfb8d63bc506f3a3d36e91733dc52f"></a>
+NSString *&#160;</td><td class="memItemRight" valign="bottom"><b>imageType</b></td></tr>
+<tr class="separator:af2bfb8d63bc506f3a3d36e91733dc52f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec3d08742acb177de8c1f9e672b579c1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec3d08742acb177de8c1f9e672b579c1"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>compressionQuality</b></td></tr>
+<tr class="separator:aec3d08742acb177de8c1f9e672b579c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_interface_mixi_u_r_l_request_constructor"><td colspan="2" onclick="javascript:toggleInherit('properties_interface_mixi_u_r_l_request_constructor')"><img src="closed.png" alt="-"/>&#160;プロパティ inherited from <a class="el" href="interface_mixi_u_r_l_request_constructor.html">MixiURLRequestConstructor</a></td></tr>
+<tr class="memitem:a9f14aa96d7991a9fb65f537a01ddefb2 inherit properties_interface_mixi_u_r_l_request_constructor"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f14aa96d7991a9fb65f537a01ddefb2"></a>
+NSString *&#160;</td><td class="memItemRight" valign="bottom"><b>endpoint</b></td></tr>
+<tr class="separator:a9f14aa96d7991a9fb65f537a01ddefb2 inherit properties_interface_mixi_u_r_l_request_constructor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9f526ccafbc4056c85c15ba299ebc9c inherit properties_interface_mixi_u_r_l_request_constructor"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9f526ccafbc4056c85c15ba299ebc9c"></a>
+NSString *&#160;</td><td class="memItemRight" valign="bottom"><b>endpointBaseUrl</b></td></tr>
+<tr class="separator:af9f526ccafbc4056c85c15ba299ebc9c inherit properties_interface_mixi_u_r_l_request_constructor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab36803b24ce888b33a855d64d8250a72 inherit properties_interface_mixi_u_r_l_request_constructor"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab36803b24ce888b33a855d64d8250a72"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>openMixiAppToAuthorizeIfNeeded</b></td></tr>
+<tr class="separator:ab36803b24ce888b33a855d64d8250a72 inherit properties_interface_mixi_u_r_l_request_constructor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_interface_mixi_u_r_l_request_constructor"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_interface_mixi_u_r_l_request_constructor')"><img src="closed.png" alt="-"/>&#160;Protected 変数 inherited from <a class="el" href="interface_mixi_u_r_l_request_constructor.html">MixiURLRequestConstructor</a></td></tr>
+<tr class="memitem:a658515509f8ec821dd22c3d7fca4ccb8 inherit pro_attribs_interface_mixi_u_r_l_request_constructor"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a658515509f8ec821dd22c3d7fca4ccb8"></a>
+NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_mixi_u_r_l_request_constructor.html#a658515509f8ec821dd22c3d7fca4ccb8">endpoint_</a></td></tr>
+<tr class="memdesc:a658515509f8ec821dd22c3d7fca4ccb8 inherit pro_attribs_interface_mixi_u_r_l_request_constructor"><td class="mdescLeft">&#160;</td><td class="mdescRight">エンドポイント <br/></td></tr>
+<tr class="separator:a658515509f8ec821dd22c3d7fca4ccb8 inherit pro_attribs_interface_mixi_u_r_l_request_constructor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b0c05e088c4681a401cc20ba442a502 inherit pro_attribs_interface_mixi_u_r_l_request_constructor"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b0c05e088c4681a401cc20ba442a502"></a>
+NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_mixi_u_r_l_request_constructor.html#a6b0c05e088c4681a401cc20ba442a502">endpointBaseUrl_</a></td></tr>
+<tr class="memdesc:a6b0c05e088c4681a401cc20ba442a502 inherit pro_attribs_interface_mixi_u_r_l_request_constructor"><td class="mdescLeft">&#160;</td><td class="mdescRight">エンドポイントのベースURL <br/></td></tr>
+<tr class="separator:a6b0c05e088c4681a401cc20ba442a502 inherit pro_attribs_interface_mixi_u_r_l_request_constructor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05ea60b6373be2df72c8b460411c0599 inherit pro_attribs_interface_mixi_u_r_l_request_constructor"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a05ea60b6373be2df72c8b460411c0599"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_mixi_u_r_l_request_constructor.html#a05ea60b6373be2df72c8b460411c0599">openMixiAppToAuthorizeIfNeeded_</a></td></tr>
+<tr class="memdesc:a05ea60b6373be2df72c8b460411c0599 inherit pro_attribs_interface_mixi_u_r_l_request_constructor"><td class="mdescLeft">&#160;</td><td class="mdescRight">リクエスト送信時にアクセストークンがなかった場合、公式アプリを開くかどうか デフォルトはYES。UU集計APIなど公式アプリに遷移すると困る場合にはNOにしておきます。 <br/></td></tr>
+<tr class="separator:a05ea60b6373be2df72c8b460411c0599 inherit pro_attribs_interface_mixi_u_r_l_request_constructor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">説明</h2>
+<div class="textblock"><p>mixi APIのリクエストに必要な情報を保持するクラス </p>
+<p>本クラスのインスタンスはAPI実行に関する以下の情報を保持します。 </p>
+<ul>
+<li>
+エンドポイント </li>
+<li>
+パラメータ </li>
+</ul>
+<p>APIが必要とするパラメーターの値は大きく分けて文字列・JSON・画像の3種類あり、本SDKではそれらをそれぞれNSString、NSDictionary、UIImageで指定します。 基本的なリクエストの生成は次のようになります。</p>
+<pre><code>NSString *path = [[NSBundle mainBundle] pathForResource:"yoichiro" ofType:@"png"];
+UIImage *image = [[UIImage alloc] initWithContentsOfFile:path];
+<a class="el" href="interface_mixi_request.html" title="mixi APIのリクエストに必要な情報を保持するクラス ">MixiRequest</a> *request = [<a class="el" href="interface_mixi_request.html" title="mixi APIのリクエストに必要な情報を保持するクラス ">MixiRequest</a> postRequestWithEndpoint:"/path/to/api"
+                                              paramsAndKeys:@"value1", @"key1",
+                                                            @"value2", @"key2",
+                                                            image, @"key3", nil];
+</code></pre><hr/>
+<p> <b>JSON形式のリクエスト</b></p>
+<p>JSON形式で値を指定する場合は次のようになります。</p>
+<pre><code>NSMutableDictionary *json = [NSMutableDictionary dictionary];
+[diary setValue:"value1" forKey:@"key1"];
+[diary setValue:@"value2" forKey:@"key2"];
+NSMutableDictionary *subJson = [NSMutableDictionary dictionary];
+[subJson setValue:"value31" forKey:@"key31"];
+[json setValue:subJson forKey:@"key3"];</code></pre><pre><code><a class="el" href="interface_mixi_request.html" title="mixi APIのリクエストに必要な情報を保持するクラス ">MixiRequest</a> *request = [<a class="el" href="interface_mixi_request.html" title="mixi APIのリクエストに必要な情報を保持するクラス ">MixiRequest</a> postRequestWithEndpoint:"/path/to/api"
+                                              paramsAndKeys:json, @"json", nil];
+</code></pre><p>上記の場合リクエストボディに設定されるJSONは次のようになります。</p>
+<pre><code>{
+    "key1":"value1",
+    "key2":"value2",
+    "key3":{
+        "key31":"value31"
+    }
+}
+</code></pre><p>なお、JSONはリクエストボディを占有してしまうため、画像以外の値を持つ唯一のパラメータでなければいけません。つまり次のような指定はできません。</p>
+<p>// 以下のリクエストではjson変数はJSONとしては扱われません。 </p>
+<pre><code><a class="el" href="interface_mixi_request.html" title="mixi APIのリクエストに必要な情報を保持するクラス ">MixiRequest</a> *request = [<a class="el" href="interface_mixi_request.html" title="mixi APIのリクエストに必要な情報を保持するクラス ">MixiRequest</a> postRequestWithEndpoint:"/path/to/api"
+                                              paramsAndKeys:json, @"json",
+                                                            @"wrong_value", @"wrong_key", nil];
+</code></pre><hr/>
+<p> <b>さまざまなパラメータの指定方法</b></p>
+<p>パラメータをNSDictionaryオブジェクトでまとめて指定することもできます。パラメータの種類を動的に変更する場合はこちらを使用するといいでしょう。</p>
+<pre><code>NSMutableDictionary *params = [NSMutableDictionary dictionary];
+[params setObject:"value1" forKey:@"key1"];
+[params setObject:@"value2" forKey:@"key2"];
+MixiRequest *request = [MixiRequest postRequestWithEndpoint:@"/path/to/api" params:params];
+</code></pre><p>リクエストを作成してからパラメータを追加しても構いません。</p>
+<pre><code><a class="el" href="interface_mixi_request.html" title="mixi APIのリクエストに必要な情報を保持するクラス ">MixiRequest</a> *request = [<a class="el" href="interface_mixi_request.html" title="mixi APIのリクエストに必要な情報を保持するクラス ">MixiRequest</a> postRequestWithEndpoint:"/path/to/api"];
+[request setParam:@"value1" forKey:@"key1"];
+[request setParam:@"value2" forKey:@"key2"];
+</code></pre><hr/>
+<p> <b>リクエストボディを指定</b></p>
+<p>HTTPリクエストのボディを直接指定することもできます。 リクエストボディに直接画像データを設定することを要求するAPIがありますが、paramsの値としてUIImageオブジェクトを与えた場合はマルチパートデータとして送信されてしまいます。 そのような場合に、次のコンストラクタが利用できます。</p>
+<pre><code><a class="el" href="interface_mixi_request.html" title="mixi APIのリクエストに必要な情報を保持するクラス ">MixiRequest</a> *request = [<a class="el" href="interface_mixi_request.html" title="mixi APIのリクエストに必要な情報を保持するクラス ">MixiRequest</a> postRequestWithEndpoint:"/path/to/api" body:image];
+</code></pre><hr/>
+<p> <b>添付される画像の形式</b></p>
+<p>添付される画像はデフォルトではJPEG形式ですが、次のメソッドを呼び出しておくことでデフォルトでPNG形式を使うこともできます。</p>
+<pre><code>[<a class="el" href="interface_mixi_request.html" title="mixi APIのリクエストに必要な情報を保持するクラス ">MixiRequest</a> setDefaultImageTypePNG];
+</code></pre><p>リクエストごとに画像の形式を変更する場合はimageTypeプロパティを使用します。</p>
+<pre><code>request.imageType = "png";
+</code></pre><p>なお、一つのリクエストに形式の異なる画像を混在させることはできません。 </p>
+</div><h2 class="groupheader">Method Documentation</h2>
+<a class="anchor" id="a26f026fb256c76b3daa585d0372a86b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) addAttachment: </td>
+          <td></td>
+          <td class="paramtype">(UIImage*)&#160;</td>
+          <td class="paramname"><em>image</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">forKey:</td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>添付ファイルを追加 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>画像 </td></tr>
+    <tr><td class="paramname">key</td><td>キー </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a8ba53f5bf43b4b5bb7a9104efc165de2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) deleteRequestWithEndpoint: </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>endpoint</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>エンドポイントを指定してDELETEリクエストを生成 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>APIエンドポイント </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>MixiRequestインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abbc61a7a184a0b4cb9f52a95bde401d1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) <a class="el" href="interface_mixi_request.html#a8ba53f5bf43b4b5bb7a9104efc165de2">deleteRequestWithEndpoint:</a> </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>endpoint</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">body:</td>
+          <td></td>
+          <td class="paramtype">(NSObject*)&#160;</td>
+          <td class="paramname"><em>body</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">params:</td>
+          <td></td>
+          <td class="paramtype">(NSDictionary*)&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>エンドポイントとリクエストボディとパラメーターを指定してDELETEリクエストを生成 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>APIエンドポイント </td></tr>
+    <tr><td class="paramname">body</td><td>リクエストボディ </td></tr>
+    <tr><td class="paramname">params</td><td>パラメータ。値の型に応じて次のように送り分けられます。<ul>
+<li>辞書の値が<code>NSString</code>インスタンスの場合はクエリパラメータ</li>
+<li>辞書の値が<code>UIImage</code>インスタンスの場合は画像を添付</li>
+<li>辞書の値が<code>NSDictionary</code>インスタンスの場合はJSON文字列 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>MixiRequestインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2fd21982c389b5f1092caed563ac61a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) <a class="el" href="interface_mixi_request.html#a8ba53f5bf43b4b5bb7a9104efc165de2">deleteRequestWithEndpoint:</a> </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>endpoint</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">body:</td>
+          <td></td>
+          <td class="paramtype">(NSObject*)&#160;</td>
+          <td class="paramname"><em>body</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">paramsAndKeys:</td>
+          <td></td>
+          <td class="paramtype">(NSObject*)&#160;</td>
+          <td class="paramname"><em>paramsKeys</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">,</td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>エンドポイントとリクエストボディとパラメーターを指定してDELETEリクエストを生成 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>APIエンドポイント </td></tr>
+    <tr><td class="paramname">リクエストボディ</td><td></td></tr>
+    <tr><td class="paramname">paramsKeys</td><td>可変長パラメータ。偶数個指定すること。また最期の引数はnilにすること。値の型に応じて次のように送り分けられます。<ul>
+<li>辞書の値が<code>NSString</code>インスタンスの場合はクエリパラメータ</li>
+<li>辞書の値が<code>UIImage</code>インスタンスの場合は画像を添付</li>
+<li>辞書の値が<code>NSDictionary</code>インスタンスの場合はJSON文字列 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>MixiRequestインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a90b916890c59a0bbd245e25912317745"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) <a class="el" href="interface_mixi_request.html#a8ba53f5bf43b4b5bb7a9104efc165de2">deleteRequestWithEndpoint:</a> </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>endpoint</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">params:</td>
+          <td></td>
+          <td class="paramtype">(NSDictionary*)&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>エンドポイントとパラメーターを指定してDELETEリクエストを生成 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>APIエンドポイント </td></tr>
+    <tr><td class="paramname">params</td><td>パラメータ。値の型に応じて次のように送り分けられます。<ul>
+<li>辞書の値が<code>NSString</code>インスタンスの場合はクエリパラメータ</li>
+<li>辞書の値が<code>UIImage</code>インスタンスの場合は画像を添付</li>
+<li>辞書の値が<code>NSDictionary</code>インスタンスの場合はJSON文字列 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>MixiRequestインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a30026383ebceb75b0dff392902034abd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) <a class="el" href="interface_mixi_request.html#a8ba53f5bf43b4b5bb7a9104efc165de2">deleteRequestWithEndpoint:</a> </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>endpoint</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">paramsAndKeys:</td>
+          <td></td>
+          <td class="paramtype">(NSObject*)&#160;</td>
+          <td class="paramname"><em>paramsKeys</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">,</td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>エンドポイントとパラメーターを指定してDELETEリクエストを生成 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>APIエンドポイント </td></tr>
+    <tr><td class="paramname">paramsKeys</td><td>可変長パラメータ。偶数個指定すること。また最期の引数はnilにすること。値の型に応じて次のように送り分けられます。<ul>
+<li>辞書の値が<code>NSString</code>インスタンスの場合はクエリパラメータ</li>
+<li>辞書の値が<code>UIImage</code>インスタンスの場合は画像を添付</li>
+<li>辞書の値が<code>NSDictionary</code>インスタンスの場合はJSON文字列 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>MixiRequestインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0e5b0a8ec2c7d46f2ed4bc260414016b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) getRequestWithEndpoint: </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>endpoint</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">params:</td>
+          <td></td>
+          <td class="paramtype">(NSDictionary*)&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>エンドポイントとパラメーターを指定してGETリクエストを生成 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>APIエンドポイント </td></tr>
+    <tr><td class="paramname">params</td><td>パラメータ。値の型に応じて次のように送り分けられます。<ul>
+<li>辞書の値が<code>NSString</code>インスタンスの場合はクエリパラメータ</li>
+<li>辞書の値が<code>UIImage</code>インスタンスの場合は画像を添付</li>
+<li>辞書の値が<code>NSDictionary</code>インスタンスの場合はJSON文字列 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>MixiRequestインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac0cb07a81eb0e62d5ff718078b4ee026"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) getRequestWithEndpoint: </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>endpoint</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">paramsAndKeys:</td>
+          <td></td>
+          <td class="paramtype">(NSObject*)&#160;</td>
+          <td class="paramname"><em>paramsKeys</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">,</td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>エンドポイントとパラメーターを指定してGETリクエストを生成 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>APIエンドポイント </td></tr>
+    <tr><td class="paramname">paramsKeys</td><td>可変長パラメータ。偶数個指定すること。また最期の引数はnilにすること。値の型に応じて次のように送り分けられます。<ul>
+<li>辞書の値が<code>NSString</code>インスタンスの場合はクエリパラメータ</li>
+<li>辞書の値が<code>UIImage</code>インスタンスの場合は画像を添付</li>
+<li>辞書の値が<code>NSDictionary</code>インスタンスの場合はJSON文字列 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>MixiRequestインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adb45ba5f12776ee5223287273508f787"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (id) <a class="el" href="interface_mixi_u_r_l_request_constructor.html#a3a3605daf2e37a9efb33dbb16ff39800">initWithEndpoint:</a> </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>endpoint</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">body:</td>
+          <td></td>
+          <td class="paramtype">(NSObject*)&#160;</td>
+          <td class="paramname"><em>body</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">params:</td>
+          <td></td>
+          <td class="paramtype">(NSDictionary*)&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>エンドポイントとリクエストボディとパラメーターを指定してリクエストを初期化 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>APIエンドポイント </td></tr>
+    <tr><td class="paramname">body</td><td>リクエストボディ </td></tr>
+    <tr><td class="paramname">params</td><td>パラメータ。値の型に応じて次のように送り分けられます。<ul>
+<li>辞書の値が<code>NSString</code>インスタンスの場合はクエリパラメータ</li>
+<li>辞書の値が<code>UIImage</code>インスタンスの場合は画像を添付</li>
+<li>辞書の値が<code>NSDictionary</code>インスタンスの場合はJSON文字列 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>MixiRequestインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a86e608305b620b3ea5e6e8d3590eb141"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (id) <a class="el" href="interface_mixi_u_r_l_request_constructor.html#a3a3605daf2e37a9efb33dbb16ff39800">initWithEndpoint:</a> </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>endpoint</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">params:</td>
+          <td></td>
+          <td class="paramtype">(NSDictionary*)&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>エンドポイントとパラメーターを指定してリクエストを初期化 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>APIエンドポイント </td></tr>
+    <tr><td class="paramname">params</td><td>パラメータ。値の型に応じて次のように送り分けられます。<ul>
+<li>辞書の値が<code>NSString</code>インスタンスの場合はクエリパラメータ</li>
+<li>辞書の値が<code>UIImage</code>インスタンスの場合は画像を添付</li>
+<li>辞書の値が<code>NSDictionary</code>インスタンスの場合はJSON文字列 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>MixiRequestインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae664e43164cc446350317d5d417e78aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (id) initWithMethod: </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>httpMethod</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">endpoint:</td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>endpoint</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTPメソッドとエンドポイントを指定してリクエストを初期化 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">httpMethod</td><td>HTTPメソッド </td></tr>
+    <tr><td class="paramname">endpoint</td><td>APIエンドポイント </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>MixiRequestインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a37d95f00b6f0eedc7dae95bb6c043e10"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (id) initWithMethod: </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>httpMethod</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">endpoint:</td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>endpoint</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">body:</td>
+          <td></td>
+          <td class="paramtype">(NSObject*)&#160;</td>
+          <td class="paramname"><em>body</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTPメソッドとエンドポイントとリクエストボディを指定してリクエストを初期化 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">httpMethod</td><td>HTTPメソッド </td></tr>
+    <tr><td class="paramname">endpoint</td><td>APIエンドポイント </td></tr>
+    <tr><td class="paramname">body</td><td>リクエストボディ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>MixiRequestインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adf34d40b430684dfbce71152eff5a21b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (id) initWithMethod: </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>httpMethod</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">endpoint:</td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>endpoint</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">body:</td>
+          <td></td>
+          <td class="paramtype">(NSObject*)&#160;</td>
+          <td class="paramname"><em>body</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">params:</td>
+          <td></td>
+          <td class="paramtype">(NSDictionary*)&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>[指定イニシャライザ] HTTPメソッドとエンドポイントとリクエストボディとパラメーターを指定してリクエストを初期化 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">httpMethod</td><td>HTTPメソッド </td></tr>
+    <tr><td class="paramname">endpoint</td><td>APIエンドポイント </td></tr>
+    <tr><td class="paramname">body</td><td>リクエストボディ </td></tr>
+    <tr><td class="paramname">params</td><td>パラメータ。値の型に応じて次のように送り分けられます。<ul>
+<li>辞書の値が<code>NSString</code>インスタンスの場合はクエリパラメータ</li>
+<li>辞書の値が<code>UIImage</code>インスタンスの場合は画像を添付</li>
+<li>辞書の値が<code>NSDictionary</code>インスタンスの場合はJSON文字列 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>MixiRequestインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af1d99b714c6a64ee7c242d23d02956e1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (id) initWithMethod: </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>httpMethod</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">endpoint:</td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>endpoint</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">params:</td>
+          <td></td>
+          <td class="paramtype">(NSDictionary*)&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTPメソッドとエンドポイントとパラメーターを指定してリクエストを初期化 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">httpMethod</td><td>HTTPメソッド </td></tr>
+    <tr><td class="paramname">endpoint</td><td>APIエンドポイント </td></tr>
+    <tr><td class="paramname">params</td><td>パラメータ。値の型に応じて次のように送り分けられます。<ul>
+<li>辞書の値が<code>NSString</code>インスタンスの場合はクエリパラメータ</li>
+<li>辞書の値が<code>UIImage</code>インスタンスの場合は画像を添付</li>
+<li>辞書の値が<code>NSDictionary</code>インスタンスの場合はJSON文字列 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>MixiRequestインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa9c72d896a97f4318d055d08fa64ff69"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) postRequestWithEndpoint: </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>endpoint</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>エンドポイントを指定してPOSTリクエストを生成 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>APIエンドポイント </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>MixiRequestインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7c375e91c1ab9dec4948122f219af621"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) <a class="el" href="interface_mixi_request.html#aa9c72d896a97f4318d055d08fa64ff69">postRequestWithEndpoint:</a> </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>endpoint</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">body:</td>
+          <td></td>
+          <td class="paramtype">(NSObject*)&#160;</td>
+          <td class="paramname"><em>body</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>エンドポイントとリクエストボディを指定してPOSTリクエストを生成 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>APIエンドポイント </td></tr>
+    <tr><td class="paramname">body</td><td>リクエストボディ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>MixiRequestインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4e4fa5dda0a5162f52c47d01cc5edcb5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) <a class="el" href="interface_mixi_request.html#aa9c72d896a97f4318d055d08fa64ff69">postRequestWithEndpoint:</a> </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>endpoint</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">body:</td>
+          <td></td>
+          <td class="paramtype">(NSObject*)&#160;</td>
+          <td class="paramname"><em>body</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">params:</td>
+          <td></td>
+          <td class="paramtype">(NSDictionary*)&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>エンドポイントとリクエストボディとパラメーターを指定してPOSTリクエストを生成 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>APIエンドポイント </td></tr>
+    <tr><td class="paramname">body</td><td>リクエストボディ </td></tr>
+    <tr><td class="paramname">params</td><td>パラメータ。値の型に応じて次のように送り分けられます。<ul>
+<li>辞書の値が<code>NSString</code>インスタンスの場合はクエリパラメータ</li>
+<li>辞書の値が<code>UIImage</code>インスタンスの場合は画像を添付</li>
+<li>辞書の値が<code>NSDictionary</code>インスタンスの場合はJSON文字列 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>MixiRequestインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a45779b7dea070da2ea3417e83e2da6e1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) <a class="el" href="interface_mixi_request.html#aa9c72d896a97f4318d055d08fa64ff69">postRequestWithEndpoint:</a> </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>endpoint</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">body:</td>
+          <td></td>
+          <td class="paramtype">(NSObject*)&#160;</td>
+          <td class="paramname"><em>body</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">paramsAndKeys:</td>
+          <td></td>
+          <td class="paramtype">(NSObject*)&#160;</td>
+          <td class="paramname"><em>paramsKeys</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">,</td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>エンドポイントとリクエストボディとパラメーターを指定してPOSTリクエストを生成 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>APIエンドポイント </td></tr>
+    <tr><td class="paramname">リクエストボディ</td><td></td></tr>
+    <tr><td class="paramname">paramsKeys</td><td>可変長パラメータ。偶数個指定すること。また最期の引数はnilにすること。値の型に応じて次のように送り分けられます。<ul>
+<li>辞書の値が<code>NSString</code>インスタンスの場合はクエリパラメータ</li>
+<li>辞書の値が<code>UIImage</code>インスタンスの場合は画像を添付</li>
+<li>辞書の値が<code>NSDictionary</code>インスタンスの場合はJSON文字列 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>MixiRequestインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a989f15fa7d063356742140b345019f3a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) <a class="el" href="interface_mixi_request.html#aa9c72d896a97f4318d055d08fa64ff69">postRequestWithEndpoint:</a> </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>endpoint</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">params:</td>
+          <td></td>
+          <td class="paramtype">(NSDictionary*)&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>エンドポイントとパラメーターを指定してPOSTリクエストを生成 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>APIエンドポイント </td></tr>
+    <tr><td class="paramname">params</td><td>パラメータ。値の型に応じて次のように送り分けられます。<ul>
+<li>辞書の値が<code>NSString</code>インスタンスの場合はクエリパラメータ</li>
+<li>辞書の値が<code>UIImage</code>インスタンスの場合は画像を添付</li>
+<li>辞書の値が<code>NSDictionary</code>インスタンスの場合はJSON文字列 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>MixiRequestインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5c9a13b94cf4e208f0ee45cc9089baa1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) <a class="el" href="interface_mixi_request.html#aa9c72d896a97f4318d055d08fa64ff69">postRequestWithEndpoint:</a> </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>endpoint</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">paramsAndKeys:</td>
+          <td></td>
+          <td class="paramtype">(NSObject*)&#160;</td>
+          <td class="paramname"><em>paramsKeys</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">,</td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>エンドポイントとパラメーターを指定してPOSTリクエストを生成 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>APIエンドポイント </td></tr>
+    <tr><td class="paramname">paramsKeys</td><td>可変長パラメータ。偶数個指定すること。また最期の引数はnilにすること。値の型に応じて次のように送り分けられます。<ul>
+<li>辞書の値が<code>NSString</code>インスタンスの場合はクエリパラメータ</li>
+<li>辞書の値が<code>UIImage</code>インスタンスの場合は画像を添付</li>
+<li>辞書の値が<code>NSDictionary</code>インスタンスの場合はJSON文字列 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>MixiRequestインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a16d88eff3ecd8d07faa617ca57bb9dfd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) putRequestWithEndpoint: </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>endpoint</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">body:</td>
+          <td></td>
+          <td class="paramtype">(NSObject*)&#160;</td>
+          <td class="paramname"><em>body</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>エンドポイントとリクエストボディを指定してPUTリクエストを生成 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>APIエンドポイント </td></tr>
+    <tr><td class="paramname">body</td><td>リクエストボディ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="abb5be7a6433db24ea26b11c6e3b0dc0e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) putRequestWithEndpoint: </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>endpoint</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">body:</td>
+          <td></td>
+          <td class="paramtype">(NSObject*)&#160;</td>
+          <td class="paramname"><em>body</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">params:</td>
+          <td></td>
+          <td class="paramtype">(NSDictionary*)&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>エンドポイントとリクエストボディとパラメーターを指定してPUTリクエストを生成 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>APIエンドポイント </td></tr>
+    <tr><td class="paramname">body</td><td>リクエストボディ </td></tr>
+    <tr><td class="paramname">params</td><td>パラメータ。値の型に応じて次のように送り分けられます。<ul>
+<li>辞書の値が<code>NSString</code>インスタンスの場合はクエリパラメータ</li>
+<li>辞書の値が<code>UIImage</code>インスタンスの場合は画像を添付</li>
+<li>辞書の値が<code>NSDictionary</code>インスタンスの場合はJSON文字列 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>MixiRequestインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a96b6931517617173dfb752dc98f027f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) putRequestWithEndpoint: </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>endpoint</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">body:</td>
+          <td></td>
+          <td class="paramtype">(NSObject*)&#160;</td>
+          <td class="paramname"><em>body</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">paramsAndKeys:</td>
+          <td></td>
+          <td class="paramtype">(NSObject*)&#160;</td>
+          <td class="paramname"><em>paramsKeys</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">,</td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>エンドポイントとリクエストボディとパラメーターを指定してPUTリクエストを生成 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>APIエンドポイント </td></tr>
+    <tr><td class="paramname">リクエストボディ</td><td></td></tr>
+    <tr><td class="paramname">paramsKeys</td><td>可変長パラメータ。偶数個指定すること。また最期の引数はnilにすること。値の型に応じて次のように送り分けられます。<ul>
+<li>辞書の値が<code>NSString</code>インスタンスの場合はクエリパラメータ</li>
+<li>辞書の値が<code>UIImage</code>インスタンスの場合は画像を添付</li>
+<li>辞書の値が<code>NSDictionary</code>インスタンスの場合はJSON文字列 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>MixiRequestインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4a64cf5b23e9d6d8495aefe926e4d67b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) putRequestWithEndpoint: </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>endpoint</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">params:</td>
+          <td></td>
+          <td class="paramtype">(NSDictionary*)&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>エンドポイントとパラメーターを指定してPUTリクエストを生成 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>APIエンドポイント </td></tr>
+    <tr><td class="paramname">params</td><td>パラメータ。値の型に応じて次のように送り分けられます。<ul>
+<li>辞書の値が<code>NSString</code>インスタンスの場合はクエリパラメータ</li>
+<li>辞書の値が<code>UIImage</code>インスタンスの場合は画像を添付</li>
+<li>辞書の値が<code>NSDictionary</code>インスタンスの場合はJSON文字列 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>MixiRequestインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a358f00bf10e0773082bf3a91901d57d6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) putRequestWithEndpoint: </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>endpoint</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">paramsAndKeys:</td>
+          <td></td>
+          <td class="paramtype">(NSObject*)&#160;</td>
+          <td class="paramname"><em>paramsKeys</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">,</td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>エンドポイントとパラメーターを指定してPUTリクエストを生成 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>APIエンドポイント </td></tr>
+    <tr><td class="paramname">paramsKeys</td><td>可変長パラメータ。偶数個指定すること。また最期の引数はnilにすること。値の型に応じて次のように送り分けられます。<ul>
+<li>辞書の値が<code>NSString</code>インスタンスの場合はクエリパラメータ</li>
+<li>辞書の値が<code>UIImage</code>インスタンスの場合は画像を添付</li>
+<li>辞書の値が<code>NSDictionary</code>インスタンスの場合はJSON文字列 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>MixiRequestインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa62c59fb9140c81fe4dc0c2939a228d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) requestWithEndpoint: </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>endpoint</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>エンドポイントを指定してGETリクエストを生成 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>APIエンドポイント </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>MixiRequestインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae1937aa6495f2f8fac4763fa8bfb1d47"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) <a class="el" href="interface_mixi_request.html#aa62c59fb9140c81fe4dc0c2939a228d8">requestWithEndpoint:</a> </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>endpoint</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">params:</td>
+          <td></td>
+          <td class="paramtype">(NSDictionary*)&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>エンドポイントとパラメーターを指定してGETリクエストを生成 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>APIエンドポイント </td></tr>
+    <tr><td class="paramname">params</td><td>パラメータ。値の型に応じて次のように送り分けられます。<ul>
+<li>辞書の値が<code>NSString</code>インスタンスの場合はクエリパラメータ</li>
+<li>辞書の値が<code>UIImage</code>インスタンスの場合は画像を添付</li>
+<li>辞書の値が<code>NSDictionary</code>インスタンスの場合はJSON文字列 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>MixiRequestインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3deb7ecfbbac2dd0613dae19a6529f8d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) <a class="el" href="interface_mixi_request.html#aa62c59fb9140c81fe4dc0c2939a228d8">requestWithEndpoint:</a> </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>endpoint</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">paramsAndKeys:</td>
+          <td></td>
+          <td class="paramtype">(NSObject*)&#160;</td>
+          <td class="paramname"><em>paramsKeys</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">,</td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>エンドポイントとパラメーターを指定してGETリクエストを生成 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>APIエンドポイント </td></tr>
+    <tr><td class="paramname">paramsKeys</td><td>可変長パラメータ。偶数個指定すること。また最期の引数はnilにすること。値の型に応じて次のように送り分けられます。<ul>
+<li>辞書の値が<code>NSString</code>インスタンスの場合はクエリパラメータ</li>
+<li>辞書の値が<code>UIImage</code>インスタンスの場合は画像を添付</li>
+<li>辞書の値が<code>NSDictionary</code>インスタンスの場合はJSON文字列 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>MixiRequestインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a15fb511dcd392162922a8ba50f25a7c2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) requestWithMethod: </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>httpMethod</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">endpoint:</td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>endpoint</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTPメソッドとエンドポイントを指定してリクエストを生成 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">httpMethod</td><td>HTTPメソッド </td></tr>
+    <tr><td class="paramname">endpoint</td><td>APIエンドポイント </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>MixiRequestインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3e1698552b72d5588dbae267ed102ef6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) requestWithMethod: </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>httpMethod</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">endpoint:</td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>endpoint</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">body:</td>
+          <td></td>
+          <td class="paramtype">(NSObject*)&#160;</td>
+          <td class="paramname"><em>body</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTPメソッドとエンドポイントとリクエストボディを指定してリクエストを生成 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">httpMethod</td><td>HTTPメソッド </td></tr>
+    <tr><td class="paramname">endpoint</td><td>APIエンドポイント </td></tr>
+    <tr><td class="paramname">body</td><td>リクエストボディ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>MixiRequestインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af7b10d14605307411bee76c2acc222ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) requestWithMethod: </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>httpMethod</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">endpoint:</td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>endpoint</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">body:</td>
+          <td></td>
+          <td class="paramtype">(NSObject*)&#160;</td>
+          <td class="paramname"><em>body</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">params:</td>
+          <td></td>
+          <td class="paramtype">(NSDictionary*)&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTPメソッドとエンドポイントとリクエストボディとパラメーターを指定してリクエストを生成 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">httpMethod</td><td>HTTPメソッド </td></tr>
+    <tr><td class="paramname">endpoint</td><td>APIエンドポイント </td></tr>
+    <tr><td class="paramname">body</td><td>リクエストボディ </td></tr>
+    <tr><td class="paramname">params</td><td>パラメータ。値の型に応じて次のように送り分けられます。<ul>
+<li>辞書の値が<code>NSString</code>インスタンスの場合はクエリパラメータ</li>
+<li>辞書の値が<code>UIImage</code>インスタンスの場合は画像を添付</li>
+<li>辞書の値が<code>NSDictionary</code>インスタンスの場合はJSON文字列 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>MixiRequestインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a693477cbe7457b4905bcbfcfdf0aaf0a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) requestWithMethod: </td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>httpMethod</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">endpoint:</td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>endpoint</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">params:</td>
+          <td></td>
+          <td class="paramtype">(NSDictionary*)&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HTTPメソッドとエンドポイントとパラメーターを指定してリクエストを生成 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">httpMethod</td><td>HTTPメソッド </td></tr>
+    <tr><td class="paramname">endpoint</td><td>APIエンドポイント </td></tr>
+    <tr><td class="paramname">params</td><td>パラメータ。値の型に応じて次のように送り分けられます。<ul>
+<li>辞書の値が<code>NSString</code>インスタンスの場合はクエリパラメータ</li>
+<li>辞書の値が<code>UIImage</code>インスタンスの場合は画像を添付</li>
+<li>辞書の値が<code>NSDictionary</code>インスタンスの場合はJSON文字列 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>MixiRequestインスタンス </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ada279ffb3aaf7eddad2989914778eeba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (void) setDefaultCompressionQuality: </td>
+          <td></td>
+          <td class="paramtype">(float)&#160;</td>
+          <td class="paramname"><em>quality</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>JPEGを使用した際のデフォルトの圧縮率を設定 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">quality</td><td>圧縮率 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a11e4cb3375607ee548336e1522af92e1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (void) setDefaultImageTypeJPEG </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デフォルトの画像タイプをJPEGに設定 </p>
+<p>全リクエストでJPEGフォーマットを利用する場合に使用 </p>
+
+</div>
+</div>
+<a class="anchor" id="af9fc7aef452cbdede3ba7763f6e652f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (void) setDefaultImageTypePNG </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デフォルトの画像タイプをPNGに設定 </p>
+<p>全リクエストでPNGフォーマットを利用する場合に使用 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad81461c4e8c21be9183651942bc6753a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (void) setDefaultRequestCachePolicy: </td>
+          <td></td>
+          <td class="paramtype">(NSURLRequestCachePolicy)&#160;</td>
+          <td class="paramname"><em>cachePolicy</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デフォルトキャッシュポリシーを設定 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cachePolicy</td><td>キャッシュポリシー </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a972ef46d591b92b07612906d0b7a30b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (void) setDefaultRequestTimeout: </td>
+          <td></td>
+          <td class="paramtype">(NSTimeInterval)&#160;</td>
+          <td class="paramname"><em>interval</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デフォルトタイムアウトを設定 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">interval</td><td>タイムアウト秒数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a627bc0e5540626186cfe8e7e0529d90a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setParam: </td>
+          <td></td>
+          <td class="paramtype">(NSObject*)&#160;</td>
+          <td class="paramname"><em>value</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">forKey:</td>
+          <td></td>
+          <td class="paramtype">(NSString*)&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>パラメーターを設定 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>値の型に応じて次のように送り分けられます。<ul>
+<li>値が<code>NSString</code>インスタンスの場合はクエリパラメータ</li>
+<li>値が<code>UIImage</code>インスタンスの場合は画像を添付</li>
+<li>値が<code>NSDictionary</code>インスタンスの場合はJSON文字列 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">key</td><td>キー </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a21d7cabcfd3ae1062181942d96cfe589"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setParamsAndKeys: </td>
+          <td></td>
+          <td class="paramtype">(NSObject*)&#160;</td>
+          <td class="paramname"><em>paramsKeys</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">,</td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>パラメーターを設定 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">paramsKeys</td><td>可変長パラメータ。偶数個指定すること。また最期の引数はnilにすること。値の型に応じて次のように送り分けられます。<ul>
+<li>値が<code>NSString</code>インスタンスの場合はクエリパラメータ</li>
+<li>値が<code>UIImage</code>インスタンスの場合は画像を添付</li>
+<li>値が<code>NSDictionary</code>インスタンスの場合はJSON文字列 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a033294183dad022e9ac973f473656d30"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (NSString *) userAgent </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ユーザーエージェントを取得 </p>
+<dl class="section return"><dt>戻り値</dt><dd>ユーザーエージェント </dd></dl>
+
+</div>
+</div>
+<hr/>このクラスの説明は次のファイルから生成されました:<ul>
+<li>Networking/<a class="el" href="_mixi_request_8h_source.html">MixiRequest.h</a></li>
+<li>Networking/MixiRequest.m</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+My Projectに対してThu Sep 12 2013 11:29:27に生成されました。 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>

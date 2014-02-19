@@ -1,0 +1,390 @@
+はじめにお読みください。
+=======================
+
+はじめに
+--------
+
+mixi API SDK for iOSは開発者の方がiOSネイティブのmixiアプリをできる限り簡単に開発することができるように開発されました。
+
+### 特徴
+
+mixi API SDK for iOSの特徴は、以下の通りです。
+
+- 個人・法人に関わらず、個人パートナー登録すればどなたでも開発可能
+- OAuth 2.0の認証/認可手順の実装が不要
+- Tokenの取得/更新を自動化
+- APIコールを統一的な手順で実行可能
+- シングルサインオンが可能でユーザ認可時のパスワード入力不要
+
+### サポート端末
+
+本SDKにてサポートするiOS端末は以下の通りです。
+
+- iPhone（iOS4.0以降搭載） **1
+
+**1 iPadについては、対応未定
+
+### 利用可能なAPI
+
+- mixiアプリ
+  - People API
+  - Groups API
+  - Photo API
+  - Request API
+  - Communication Feed **2
+- Graph API **3
+  - People API
+  - Groups API
+  - People lookup API
+  - Voice API
+  - Updates API
+  - Check API
+  - Photo API
+  - Message API
+  - Diary API
+  - Check-in API
+  - Profile Image API
+
+**2 Communication Feedについては、今後提供予定
+
+**3 基本的に提供されているすべての Graph API が利用可能です。
+
+なお、Geolocation APIについてはTouch版/モバイル版と異なり、弊社への許諾なしに利用することが可能です。
+
+SDKダウンロード
+---------------
+
+mixi API SDK for iOS を利用するには、以下のファイルをダウンロードしてください。
+ダウンロードすると、mixi API SDK for iOS の利用規約に同意したものと見なされます。
+
+<table>
+  <tr><th>package</th><th>version</th><th>size</th><th>date</th></tr>
+  <tr><td><a href="http://developer.mt.mixi.co.jp/connect/appli/spec/ios/download/mixiIOSSDK-1.5.1.zip">mixiIOSSDK-1.5.1.zip</a></td><td>v1.5.1</td><td>610KB</td><td>2013-09-12</td></tr>
+</table>
+
+### 更新履歴
+
+v1.5.0 2013-09-12
+- 不具合修正（画像圧縮）
+
+v1.4.9 2013-01-07
+- HTTPレスポンスを確認するデリゲートメソッド（MixiDelegate#mixi:didReceiveResponse:）を追加
+
+v1.4.8 2012-10-26
+- SDK付属認可画面のログインクッキーのクリア処理を追加
+
+v1.4.7 2012-10-11
+- revokeAndLogoutの追加
+
+v1.4.6 2012-09-21
+- ログインボタンの二度押し防止
+- iOS6でのwarning抑止
+
+v1.4.5 2012-07-26
+- リクエストAPIのエラー処理方法を変更
+- 不具合修正（APIの同期呼出・Graph APIのSDK単独認可）
+
+v1.4.4 2012-07-13
+- 認可画面から他画面へ遷移を制限
+- 不具合修正（認可情報の保持）
+
+v1.4.3 2012-06-20
+- 不具合修正（公式アプリ連携）
+
+v1.4.2 2012-06-20
+- SDK付属認可画面用デリゲート設定方法変更
+
+v1.4.1 2012-06-19
+- mixi公式iPhoneアプリの存在チェックのタイミングをアプリ起動時から認可実行前に変更
+- SDK付属の認可画面用デリゲート処理実行後に必ずモーダルビューを閉じるように変更
+
+v1.4.0 2012-06-14
+- mixiアプリでのSDK単独認可を許可
+- mixi公式iPhoneアプリの有無に応じて認可手段を自動変更
+- (注) 1.3.6以前とはmixi公式iPhoneアプリがインストールされていない場合の処理が異なります。以前と同じ動作をさせるにはmixi.authorizerの値を明示的にMixiAppAuthorizerオブジェクトに設定します。
+
+v1.3.6 2012-04-06
+- 不具合修正（mixiアプリでのSDK単独認可を停止）
+
+v1.3.5 2011-04-02
+- @throw を NSException#raise に変更
+
+v1.3.4 2012-03-28
+- Graph APIのSDK単独認可においてツールバーの「閉じる」ボタン押下を通知
+- 不具合修正（エラーコード変更・公式アプリダウンロード）
+
+v1.3.3 2012-03-15
+- 不具合修正（UserDefaults）
+
+v1.3.2 2012-03-01
+- 不具合修正（リクエストAPIキャンセル通知）
+
+v1.3.1 2012-02-21
+- リクエストAPIキャンセル通知
+
+v1.3 2012-02-13
+- mixi公式iPhoneアプリを使用せずにGraph APIを認可
+- ディレクトリ構造変更
+- 不具合修正（ボイス取得API）
+
+v1.2.1 2011-12-28
+- 不具合修正（メモリリーク）
+
+v1.2 2011-10-31
+- mixi_apps2スコープの導入とmixi_appsスコープの廃止
+- 不具合修正（リクエストAPI呼び出し、MixiConfigのappIdプロパティ削除）
+
+v1.1 2011-09-30
+- mAP対応
+
+v1.0 2011-09-20
+- 提供開始
+
+
+アプリケーションの登録
+----------------------
+
+本SDKを用いてiOSアプリを開発するための手順を説明します。
+
+### mixiアプリ
+
+SDKを利用するには、あらかじめ [Partner Dashboard](http://sap.mixi.jp) にてアプリケーションが登録されている必要があります。まず、Partner Dashboard の mixiアプリ登録ページにて登録を行なってください。その際、対応デバイスの項目で「スマートフォンに対応(iOS版)」にチェックをすることでSDKが利用可能になります。
+
+### Graph API
+
+SDKを利用するには、あらかじめ Partner Dashboard にてアプリケーションが登録されている必要があります。まず、Partner Dashboard の mixi Graph APIのサービス登録ページにてアプリケーションを登録をしてください。
+
+その際、"起動URIスキーム"を以下を参考に登録してください。
+
+### 起動URIスキーム
+
+ユーザがmixiサイト上のアプリケーション一覧やフィードをクリックした際に、WebブラウザからiOSアプリケーションが起動されることになります。この時に利用されるのが、起動URIスキームです。
+初期値は以下の値に設定されています。
+
+- mixiapp-<APP_ID>://run
+
+この起動URIスキームの<APP_ID>の部分は変更可能です。できるだけ変更されることをお勧めします。変更を行う場合は、Partner Dashboardのアプリ設定ページから変更してください。
+この起動URIスキームを実際にアプリケーションが受け取るためには、アプリケーションの Info.plist に適切な値を設定する必要があります。
+
+プロジェクトの作成
+------------------
+
+SDK（mixiIOSSDK-[ver].zip）をダウンロードして展開し、lib/MixiSDKをプロジェクトのソースディレクトリに配置します。
+
+### iOSプロジェクトの作成
+
+通常のiOSプロジェクト作成手順に従ってプロジェクトを作成します。
+
+### 必要なフレームワークの追加
+
+mixi API SDK for iOSは次のフレームワークを必要とします。
+
+- CFNetwork.framework
+- Security.framework
+- SystemConfiguration.framework
+
+### 起動URIスキームの追加
+
+Partner Dashboardに登録した起動URIスキームをプロジェクトに追加します。
+
+これで開発を始める準備は整いました。次からは、いよいよAPIの利用方法を説明していきます。
+
+初期化と認可処理
+----------------
+
+mixi API SDK for iOS を利用したアプリケーションを開発する際のコードの記述方法について説明します。
+
+### ヘッダファイルの追加
+
+SDKを利用する場合は次のヘッダファイルをインポートしてください。
+
+<pre><code>#import "MixiSDK.h"</code></pre>
+
+### 初期化
+
+mixi APIの呼び出しに使用するMixiクラスはシングルトンクラスです。インスタンスは次のようにして取得できます。
+
+<pre><code>[Mixi sharedMixi]</code></pre>
+
+ただし、APIを実行する前に一度シングルトンオブジェクトを初期化しておく必要があります。例えばGraph APIを使用する場合、
+<code>UIApplicationDelegate#application:didFinishLaunchingWithOptions:</code>
+メソッド内で次のように記述するといいでしょう。（全ての引数はアプリケーションの設定に合わせて変更してください）
+
+<pre><code>Mixi *mixi = [[Mixi sharedMixi] setupWithType:kMixiApiTypeSelectorGraphApi 
+                                    clientId:@"ab12c345de6789f12345" 
+                                      secret:@"a1b2c3456d789ef0123ghi4567jklmn89op01qrs"
+                                 redirectUrl:@"mixi-connect://success"];
+[mixi restore];
+[mixi reportOncePerDay];
+</code></pre>
+
+mixiアプリの場合、 redirectUrl は不要です。
+
+<pre><code>Mixi *mixi = [[Mixi sharedMixi] setupWithType:kMixiApiTypeSelectorMixiApp
+                                    clientId:@"ab12c345de6789f12345" 
+                                      secret:@"a1b2c3456d789ef0123ghi4567jklmn89op01qrs"];
+[mixi restore];
+[mixi reportOncePerDay];
+</code></pre>
+
+なお、上記のMixi#reportOncePerDayはアプリの起動をmixiに通知するものです。
+このコードの追記は任意ですが、サービスの改善のために協力していただけると幸いです。
+アプリケーションの情報は一切送信されません。
+
+### 認可
+
+mixiアプリのAPIを利用するためには、ユーザにAPI利用のための認可を行なってもらう必要があります。そのための画面を表示するのが authorize: メソッドです。
+
+<pre><code>[mixi authorize:@"r&#95;profile", @"w&#95;diary", nil];</code></pre>
+
+このメソッドを呼び出すことで、ユーザーの認可を促す画面が表示されます。
+
+デフォルトではmixi公式iPhoneアプリ（以下、公式アプリ）の有無によって認可画面の表示に異なるオブジェクトが利用されるため、公式アプリを使用した認可、およびSDK単体での認可に対応した2つの処理を記述してください。
+
+#### 公式アプリを使用した認可
+
+端末に公式アプリがインストールされている場合は、認可／認可解除は公式アプリを利用して行われます。
+公式アプリを利用して認可するとログイン情報が公式アプリと共有されるため、公式アプリですでにログイン済みであればユーザーIDとパスワードの入力を省略できます。
+
+公式アプリから認可結果（アクセストークンなど）を受け取るために
+<code>UIApplicationDelegate#application:openURL:sourceApplication:annotation:</code>
+メソッドに次のような処理を追加してください。
+
+<pre><code>NSError *error = nil;
+NSString *apiType = [[Mixi sharedMixi] application:application openURL:url sourceApplication:sourceApplication annotation:annotation error:&error];
+if (error) {
+    // エラーが発生しました
+}
+else if ([apiType isEqualToString:kMixiAppApiTypeToken]) {
+    // 認可処理に成功しました
+}
+else if ([apiType isEqualToString:kMixiAppApiTypeRevoke]) {
+    // 認可解除処理に成功しました
+}
+else if ([apiType isEqualToString:kMixiAppApiTypeReceiveRequest]) {
+    // リクエストAPIによるリクエスト受け取り
+}
+</code></pre>
+
+#### SDK単体での認可
+
+SDKの持つウェブビューコントローラを使用して認可画面を表示するには、そのビューコントローラの親になるビューコントローラを設定します。
+
+APIを呼び出すビューコントローラのUIViewController#viewDidAppear:に次のようなコードを追加してください。（MixiAuthorizer#setParentViewControllerに設定する値は適宜変更してください）
+
+<code><pre> - (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    Mixi *mixi = [Mixi sharedMixi];
+    mixi.authorizer.parentViewController = [self navigationController];
+}
+</pre></code>
+
+認可が完了するとその結果はSDK内に保持され、事前設定されたparentViewControllerに処理が戻されます。
+認可完了時にそれら以外の処理を実行する必要がある場合は認可オブジェクトにデリゲートを設定してください。
+
+<code><pre> mixi.authorizer.delegte = [[YourDelegate alloc] init];
+</pre></code>
+
+- MixiSDKAuthorizerDelegate#authorizer:didSuccessWithEndpoint:
+- MixiSDKAuthorizerDelegate#authorizer:didCancelWithEndpoint:
+- MixiSDKAuthorizerDelegate#authorizer:didFailWithEndpoint:error:
+
+### 認可状態の確認
+
+現在の認可状態を確認するには、以下のメソッドを利用します。
+
+<pre><code>Mixi#isAuthorized</code></pre>
+
+通常は、認可画面は初回のみ表示され、2回目以降はスキップすることが可能です。isAuthorizedメソッドはそのための確認処理を行います。既に認可済みであれば YES が返り、未認可であれば NO が返ります。
+
+### 認証解除
+
+以下のメソッドを呼び出すことで認可状態の解除を行います。なお、mixi API SDK for iOS を利用する場合はユーザ保護の観点から、必ずこの認証解除機能を必ずアプリケーションから呼び出せるようにしてください。
+
+<pre><code>Mixi#revoke</code></pre>
+
+なお、上記メソッドを呼び出しただけではSDK内にキャッシュされている古いアクセストークンは破棄されません。次のメソッドを利用することで認証の解除とアクセストークンの破棄を同時に行うことも可能です。
+
+<pre><code>Mixi#revokeAndLogout</code></pre>
+
+APIの利用
+---------
+
+API にアクセスするメソッドは複数ありますが、代表的なメソッドはMixi#sendRequest:delegate: です。本メソッドを利用して、統一的な利用で様々なAPIをコールすることが可能です。
+
+ここでは、APIを呼び出すためのsendRequest:delegate:メソッドの簡単な例を紹介します。各APIに必要なパラメータの意味や戻り値など個々のAPIに関する詳細情報については、SDKに添付されているリファレンスを参照してください。
+
+APIはエンドポイントとパラメーターを設定した<code>MixiRequest</code>インスタンスを、<code>Mixi#sendRequest:delegate:</code>メソッドに渡すことで実行します。
+API実行前に認可が完了しているかどうかを確認して、未認可の場合は先に認可しておきます。認可に失敗した場合はmixi公式アプリがインストールされていないか、最新版ではない可能性があるので、AppStoreのmixi公式アプリのページを開きます。
+
+<pre><code>if ([mixi isAuthorized]) {
+    MixiRequest *request = [MixiRequest requestWithEndpoint:＠"/people/＠me/＠friends"];
+    [mixi sendRequest:request delegate:mixiDelegate];
+}
+else if (![mixi authorizeForPermission:＠"r&#95;profile"]) {
+    MixiWebViewController *vc = MixiUtilDownloadViewController(self, @selector(closeDownloadView:));
+    vc.orientationDelegate = self;
+    [self presentModalViewController:vc animated:YES];
+}</code></pre>
+
+API実行結果はsendメソッド群の引数に与えていた<code>MixiDelegate</code>プロトコルを実装したデリゲートで処理します。
+例えば、APIの実行結果をAlertViewで表示するには次のようなデリゲートメソッドを定義したクラスのインスタンスをsendRequest:delegate:メソッドの引数に与えます。
+
+<pre><code>- (void)mixi:(Mixi*)mixi didFinishLoading:(NSString*)data {
+    MixiUtilShowMessageTitle(data, ＠"実行結果");
+}</code></pre>
+
+上記以外のデリゲートメソッドについては<code>MixiDelegate</code>のドキュメントを参照してください。
+
+mixiアドプログラムAPI
+---------------------
+
+mixiアドプログラムiOSアプリ版のAPIを利用することで、mixiアドプログラムをiOSアプリ版mixiアプリに組み込むこと ができます。ここでは、mixiアプリにどのようにmixiアドプログラムiOSアプリ版の機能を実装するかを説明いたします。
+
+### 表示イメージ
+
+mixiアドプログラムiOSアプリ版の機能を利用するには、アプリ上で以下の「mixiアドプログラム専用枠」を表示してください。
+
+専用枠サイズ： 横幅100%×縦37px（縦表示、横表示の場合とも）
+
+専用枠には上記の図の1～3の場所に、リンクが設置されます。なお表示位置と表示内容は変更することができません。
+
+### 制限事項
+
+mixiアドプログラムiOSアプリ版APIは、どなたでもご利用になれます。なお、お支払い対象となるのはmixiにiOSアプリ版mixiアプリのお申し込みいただき、弊社が承認したmixiアプリのみとなります。
+
+### 利用手順
+
+mixiアドプログラムの機能はiOS SDKではMixiADBannerViewクラスで管理されています。mixiアドプログラムを利用するにはInterface Builderを利用して指定された位置にMixiADBannerViewインスタンスを表示するか、MixiADBannerViewインスタンスを画面に表示するコードをプログラム内に含めてください。
+
+複数の画面でMixiADBannerViewを表示する場合は、MixiADBannerViewの共有オブジェクトを利用するといいでしょう。次は共有オブジェクトを利用してMixiADBannerViewを表示する例です。
+
+<pre><code>- (void)loadView {
+    [super loadView];
+    [[MixiADBannerView sharedView] addOn:self.view]:
+}
+</code></pre>
+
+デバイスの向きに応じて表示を変える場合はuseOrientationプロパティをYESに設定するか、shouldAutorotateToInterfaceOrientation: メソッド内で明示的に orientation プロパティを設定してください。
+
+<pre><code>― (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    [MixiADBannerView sharedView].orientation = interfaceOrientation;
+}
+</code></pre>
+
+### 実装後の申請
+
+アプリケーションの実装が完了した後、Ad Hocビルドしたバイナリをメールに添付し、下記の通りお送り下さい。
+
+- 宛先: contact-mixiapps@mixi.jp
+- 件名: 【iOSアプリ版mAPテスト実行ファイル申請】アプリ名/SAP名
+- 内容: リリース予定のアプリケーションのAd Hocビルドしたバイナリ（もしメール上のファイルサイズが添付ファイルを含めて10MBを越える場合は、ダウンロード先・方法を指定してください）
+
+なお、Ad Hoc配布先のデバイスとして下記のUDIDを登録してください。
+
+- 978b464c4afe7b6eacb712a36a86ac68f7da5ab6
+
+ファイルを送付後、下記のページからmixiアドプログラムiOSアプリ版にお申し込みください。
+
+http://developer.mixi.co.jp/appli/policies/map/guidelines/

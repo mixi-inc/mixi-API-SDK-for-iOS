@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>My Project: Authorize/MixiAuthorizer.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 作成： Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>マクロ定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>ページ</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_a9952c043e709254edeef4b6111ce2ed.html">Authorize</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">MixiAuthorizer.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_mixi_authorizer_8h.html">説明を見る。</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define kCurrentPermissions [NSArray array]</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">@class</span> <a class="code" href="interface_mixi.html">Mixi</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">@class</span> <a class="code" href="interface_mixi_user_defaults.html">MixiUserDefaults</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_mixi_delegate-p.html">MixiDelegate</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="interface_mixi_authorizer.html">   20</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_mixi_authorizer.html">MixiAuthorizer</a> : NSObject {</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="interface_mixi_authorizer.html#af35e9121540a879101a42f1e99fdfed0">   22</a></span>&#160;    <a class="code" href="interface_mixi.html">Mixi</a> *<a class="code" href="interface_mixi_authorizer.html#af35e9121540a879101a42f1e99fdfed0">mixi_</a>; <span class="comment">// この依存除きたい・・・</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="interface_mixi_authorizer.html#a79e52ef5a61ec44f9743716aded19eec">   25</a></span>&#160;    <a class="code" href="interface_mixi_user_defaults.html">MixiUserDefaults</a> *<a class="code" href="interface_mixi_authorizer.html#a79e52ef5a61ec44f9743716aded19eec">userDefaults_</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="interface_mixi_authorizer.html#a7bd3bfa3812aae3ffecd2a57e7ceb861">   28</a></span>&#160;    NSString *<a class="code" href="interface_mixi_authorizer.html#a7bd3bfa3812aae3ffecd2a57e7ceb861">accessToken_</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="interface_mixi_authorizer.html#af43ada69bd7cb5d166cd0c979f40b22f">   31</a></span>&#160;    NSString *<a class="code" href="interface_mixi_authorizer.html#af43ada69bd7cb5d166cd0c979f40b22f">refreshToken_</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="interface_mixi_authorizer.html#a4b8af4de9a21ddf9b23c7978bf1c80db">   34</a></span>&#160;    NSString *<a class="code" href="interface_mixi_authorizer.html#a4b8af4de9a21ddf9b23c7978bf1c80db">expiresIn_</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="interface_mixi_authorizer.html#ae49a75f6874689dfd00d1d50321d1c9e">   37</a></span>&#160;    NSString *<a class="code" href="interface_mixi_authorizer.html#ae49a75f6874689dfd00d1d50321d1c9e">state_</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="interface_mixi_authorizer.html#a1e22f5801593e47700ff0da328c62f20">   40</a></span>&#160;    NSDate *<a class="code" href="interface_mixi_authorizer.html#a1e22f5801593e47700ff0da328c62f20">accessTokenExpiryDate_</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="interface_mixi_authorizer.html#a3b824a941b98fda725b67436bd2b3f5f">   43</a></span>&#160;    BOOL <a class="code" href="interface_mixi_authorizer.html#a3b824a941b98fda725b67436bd2b3f5f">shouldLogoutAfterRevoke_</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="interface_mixi_authorizer.html#a7fb59d7a3606e5ec1f6488bef7f97036">   46</a></span>&#160;    NSArray *<a class="code" href="interface_mixi_authorizer.html#a7fb59d7a3606e5ec1f6488bef7f97036">permissions_</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">@property</span> (nonatomic, assign) <a class="code" href="interface_mixi.html">Mixi</a> *mixi;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">@property</span> (nonatomic, copy) NSString *accessToken;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">@property</span> (nonatomic, copy) NSString *refreshToken;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">@property</span> (nonatomic, copy) NSString *expiresIn;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">@property</span> (nonatomic, copy) NSString *state;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">@property</span> (nonatomic, retain) NSDate *accessTokenExpiryDate;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">@property</span> (nonatomic, retain) UIViewController *parentViewController;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">@property</span> (nonatomic, assign) <span class="keywordtype">id</span> delegate;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">@property</span> (nonatomic, assign) BOOL shouldLogoutAfterRevoke;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">@property</span> (nonatomic, retain) NSArray *permissions;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;+ (id)authorizer;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;- (BOOL)authorizeWithParentViewController:(UIViewController*)parentViewController for:(NSString*)permission, ...;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;- (BOOL)authorize:(NSString*)permission, ...;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;- (BOOL)authorizeWithParentViewController:(UIViewController*)parentViewController forPermissions:(NSArray*)permissions;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;- (BOOL)authorizeForPermission:(NSString*)permission;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;- (BOOL)authorizeForPermissions:(NSArray*)permissions;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;- (BOOL)checkAndStorePermissions:(NSArray*)permissions;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;- (BOOL)refreshAccessToken;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;- (BOOL)refreshAccessTokenWithError:(NSError**)error;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;- (NSURLConnection*)refreshAccessTokenWithDelegate:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_mixi_delegate-p.html">MixiDelegate</a>&gt;)delegate;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;- (BOOL)isAuthorized;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;- (BOOL)isAccessTokenExpired;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;- (BOOL)isRefreshTokenExpired;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;- (void)setPropertiesFromDictionary:(NSDictionary*)dict;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;- (void)store;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;- (BOOL)restore;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;- (void)clear;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;- (void)logout;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;- (BOOL)revoke;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;- (BOOL)revokeWithError:(NSError**)error;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;- (BOOL)revokeAndLogout;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;- (BOOL)revokeAndLogoutWithError:(NSError**)error;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="keyword">@end</span></div>
+<div class="ttc" id="interface_mixi_user_defaults_html"><div class="ttname"><a href="interface_mixi_user_defaults.html">MixiUserDefaults</a></div><div class="ttdoc">SDKが利用するユーザーデフォルトを管理するクラス </div><div class="ttdef"><b>Definition:</b> MixiUserDefaults.h:17</div></div>
+<div class="ttc" id="protocol_mixi_delegate-p_html"><div class="ttname"><a href="protocol_mixi_delegate-p.html">MixiDelegate-p</a></div><div class="ttdoc">mixi API実行結果処理用のデリゲート </div><div class="ttdef"><b>Definition:</b> MixiDelegate.h:18</div></div>
+<div class="ttc" id="interface_mixi_authorizer_html_a3b824a941b98fda725b67436bd2b3f5f"><div class="ttname"><a href="interface_mixi_authorizer.html#a3b824a941b98fda725b67436bd2b3f5f">MixiAuthorizer::shouldLogoutAfterRevoke_</a></div><div class="ttdeci">BOOL shouldLogoutAfterRevoke_</div><div class="ttdoc">認可解除後に自動的にログアウトするかどうか </div><div class="ttdef"><b>Definition:</b> MixiAuthorizer.h:43</div></div>
+<div class="ttc" id="interface_mixi_authorizer_html_a7fb59d7a3606e5ec1f6488bef7f97036"><div class="ttname"><a href="interface_mixi_authorizer.html#a7fb59d7a3606e5ec1f6488bef7f97036">MixiAuthorizer::permissions_</a></div><div class="ttdeci">NSArray * permissions_</div><div class="ttdoc">スコープ </div><div class="ttdef"><b>Definition:</b> MixiAuthorizer.h:46</div></div>
+<div class="ttc" id="interface_mixi_authorizer_html_a7bd3bfa3812aae3ffecd2a57e7ceb861"><div class="ttname"><a href="interface_mixi_authorizer.html#a7bd3bfa3812aae3ffecd2a57e7ceb861">MixiAuthorizer::accessToken_</a></div><div class="ttdeci">NSString * accessToken_</div><div class="ttdoc">アクセストークン </div><div class="ttdef"><b>Definition:</b> MixiAuthorizer.h:28</div></div>
+<div class="ttc" id="interface_mixi_authorizer_html_a79e52ef5a61ec44f9743716aded19eec"><div class="ttname"><a href="interface_mixi_authorizer.html#a79e52ef5a61ec44f9743716aded19eec">MixiAuthorizer::userDefaults_</a></div><div class="ttdeci">MixiUserDefaults * userDefaults_</div><div class="ttdoc">設定値保存用 </div><div class="ttdef"><b>Definition:</b> MixiAuthorizer.h:25</div></div>
+<div class="ttc" id="interface_mixi_authorizer_html_af43ada69bd7cb5d166cd0c979f40b22f"><div class="ttname"><a href="interface_mixi_authorizer.html#af43ada69bd7cb5d166cd0c979f40b22f">MixiAuthorizer::refreshToken_</a></div><div class="ttdeci">NSString * refreshToken_</div><div class="ttdoc">リフレッシュトークン </div><div class="ttdef"><b>Definition:</b> MixiAuthorizer.h:31</div></div>
+<div class="ttc" id="interface_mixi_html"><div class="ttname"><a href="interface_mixi.html">Mixi</a></div><div class="ttdoc">SDKのメインクラス </div><div class="ttdef"><b>Definition:</b> Mixi.h:353</div></div>
+<div class="ttc" id="interface_mixi_authorizer_html_ae49a75f6874689dfd00d1d50321d1c9e"><div class="ttname"><a href="interface_mixi_authorizer.html#ae49a75f6874689dfd00d1d50321d1c9e">MixiAuthorizer::state_</a></div><div class="ttdeci">NSString * state_</div><div class="ttdoc">任意 </div><div class="ttdef"><b>Definition:</b> MixiAuthorizer.h:37</div></div>
+<div class="ttc" id="interface_mixi_authorizer_html"><div class="ttname"><a href="interface_mixi_authorizer.html">MixiAuthorizer</a></div><div class="ttdoc">認可処理を実行するクラスの抽象親クラス </div><div class="ttdef"><b>Definition:</b> MixiAuthorizer.h:20</div></div>
+<div class="ttc" id="interface_mixi_authorizer_html_af35e9121540a879101a42f1e99fdfed0"><div class="ttname"><a href="interface_mixi_authorizer.html#af35e9121540a879101a42f1e99fdfed0">MixiAuthorizer::mixi_</a></div><div class="ttdeci">Mixi * mixi_</div><div class="ttdoc">Mixiオブジェクト </div><div class="ttdef"><b>Definition:</b> MixiAuthorizer.h:22</div></div>
+<div class="ttc" id="interface_mixi_authorizer_html_a4b8af4de9a21ddf9b23c7978bf1c80db"><div class="ttname"><a href="interface_mixi_authorizer.html#a4b8af4de9a21ddf9b23c7978bf1c80db">MixiAuthorizer::expiresIn_</a></div><div class="ttdeci">NSString * expiresIn_</div><div class="ttdoc">アクセストークンの有効期間 </div><div class="ttdef"><b>Definition:</b> MixiAuthorizer.h:34</div></div>
+<div class="ttc" id="interface_mixi_authorizer_html_a1e22f5801593e47700ff0da328c62f20"><div class="ttname"><a href="interface_mixi_authorizer.html#a1e22f5801593e47700ff0da328c62f20">MixiAuthorizer::accessTokenExpiryDate_</a></div><div class="ttdeci">NSDate * accessTokenExpiryDate_</div><div class="ttdoc">アクセストークンの有効期限 </div><div class="ttdef"><b>Definition:</b> MixiAuthorizer.h:40</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+My Projectに対してThu Sep 12 2013 11:29:26に生成されました。 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>
